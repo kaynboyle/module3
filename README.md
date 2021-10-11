@@ -1,2 +1,2 @@
 # module3
-module 3 is a page for the password generator challenge. This page asks the user to enter how long of a password they want to make and what kind of characters they want to include when the user clicks on the button. The user can choose weather to include uppercase, lowercase, 
+module 3 is a page for the password generator challenge. This page asks the user to enter how long of a password they want to make and what kind of characters they want to include when the user clicks on the button. The user can choose weather to include uppercase, lowercase, special, or numerical characters. the first question requires a number input while the other questions take a confimation of ok or cancel to indicate the preference.
