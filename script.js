@@ -32,14 +32,19 @@ generateBtn.addEventListener("click", writePassword);
 var ucset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lcset = 'abcdefghijklmnopqrstuvwxyz';
 var numeset = "1234567890";
-var specset ="!@#$&?";
+var specset ="!@#$&?=-:;*()^<>";
 var possibilities = "";
 
 
 var generatePassword = function() {
-  var userq1 = parseInt(prompt("How long do you want your password to be?"));
+  // var userq1 = parseInt(prompt("How long do you want your password to be?"));
+  var userq1 = prompt("How long do you want your password to be?");
   // include if the answer isn't an int
-  while (userq1 > 128 || userq1 < 8){
+  // check that the value is an int
+  var whattype = typeof(userq1) 
+  userq1 = parseInt(userq1)
+
+  while (userq1 > 128 || userq1 < 8 || isNaN(userq1)) {
     alert("Hey you messed up! Do it again")
     userq1 = prompt("How long do you want your password to be?");
   }
